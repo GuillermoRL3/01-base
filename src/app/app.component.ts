@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; 
+// import { appendFile } from 'fs';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  title = 'myfirstapp';
+  title: string = 'Bases de amgular';
+  numero: number = 10;
+  base: number = 5;
+
+  acumular (valor:number){
+    this.numero += valor;
+  };
+  // acumular( valor:number ){
+  //   this.numero += valor;
+  // }
+
 }
+
+
+
