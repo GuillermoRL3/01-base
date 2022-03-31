@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+<h3>El nombre del Super Heroe es <strong style="color: blueviolet;">{{nombre}}</strong> </h3>
+
+
+<dl>   
+    <td>nombre: </td>
+    <dd>{{nombre}}</dd>
+
+    <td>Su edad actual es: </td>
+    <dd>{{edad}}</dd>
+
+    <td>Funcion: </td>
+    <dd>{{obtenerNombre()}}</dd>
+
+    <td>Capitalizado</td>
+    <dd>{{nombreCapitalizado}}</dd>
+</dl>
+
+<button (click)="cambiarNombre()">
+    cambiar Heroe
+</button>
+
+<button (click)="cambiarEdad()">
+    Cambiar Edad
+</button>

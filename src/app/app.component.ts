@@ -6,16 +6,15 @@ import { Component } from '@angular/core';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  title: string = 'Bases de amgular';
-  numero: number = 10;
-  base: number = 5;
 
-  acumular (valor:number){
-    this.numero += valor;
-  };
-  // acumular( valor:number ){
-  //   this.numero += valor;
-  // }
+//   numero: number = 10;
+//   base: number = 5;
+//   acumular (valor:number){
+//     this.numero += valor;
+//   };
+//   acumular( valor:number ){
+//     this.numero += valor;
+//    }
 
 }
 
