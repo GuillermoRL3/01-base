@@ -2,20 +2,20 @@ import { ApplicationInitStatus, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ContadorComponent } from './contadores/contador.component';
-import { HeroeComponent } from './heroes/heroe/heroe.component';
-import { ListadoComponent } from './heroes/listado/listado.component';
+import { HeroesModules } from './heroes/heroes.module';
+import { ContadorModule } from './contadores/contador.module';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContadorComponent,
-    HeroeComponent,
-    ListadoComponent
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,   
+    HeroesModules,
+    ContadorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
